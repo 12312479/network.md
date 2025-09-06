@@ -1,0 +1,56 @@
+# network.md
+5) Recommended hardware (minimum specs + links and indicative AUD prices)
+
+Aim: recommend reliable SMB-grade gear that balances cost, manageability, and security.
+
+Perimeter/UTM firewall (HQ)
+
+Model example: Ubiquiti UniFi Dream Machine Pro (UDM-Pro) — all-in-one with UniFi OS, gateway, and controller.
+
+Min specs: 1x 10G SFP+ WAN, multiple gigabit RJ45, integrated controller, support for IDS/IPS
+
+Indicative price (AUD): ~$820–$980
+
+Retail pages: https://ubntshop.com.au/unifi-dream-machine-pro and https://mwave.com.au/product/ubiquiti-networks-unifi-udmpro
+
+Alternative (more security features): Fortinet FortiGate 60F — hardware firewall with UTM and advanced security subscriptions
+
+Indicative price (AUD): varies depending on bundle (hardware + subscriptions)
+
+Retail pages: https://avfirewalls.com.au/FortiGate-60F.php
+
+Edge router / VPN (Branch)
+
+Model example: TP-Link Omada ER7206 (or ER720) — Multi‑WAN VPN gateway
+
+Min specs: 4+ WAN support, 1 Gbps ports, IPsec VPN, centralised management support
+
+Indicative price (AUD): ~$180–$250
+
+Retail pages: https://www.tp-link.com/au/business-networking/omada-sdn-router/tl-er7206/
+
+Switches (PoE for APs & cameras)
+
+Model example HQ: Cisco SG350-10 8–10 port managed Gigabit switch (or Netgear GS110TP PoE switch)
+
+Min specs: Layer 2/3 features, VLAN support, QoS, PoE+ on required ports, SFP uplink(s)
+
+Indicative price (AUD): ~$300–$700 depending on PoE and features
+
+Retail pages: https://www.i-tech.com.au/cisco-sg-350-10-port-gbe-managed-switch-sg350-10-k9-au.html and https://scorptec.com.au/product/networking/switches/90077-gs110tp-300ajs
+
+Access Points (Wi‑Fi 6 recommended)
+
+Model example: Ubiquiti UniFi U6‑Lite (U6‑Lite)
+
+Min specs: Wi‑Fi 6, 2x2 MIMO, supports WPA3/WPA2 Enterprise, PoE 802.3af
+
+Indicative price (AUD): ~$130–$220 per AP
+
+Retail pages: https://ubwh.com.au/Ubiquiti/UniFi-WiFi/U6-Lite and https://wisp.net.au/ubiquiti-unifi-6-lite.html
+
+Other hardware
+
+Patch panels, rack, and UPS — 1U/2U server rack, 1–2 kVA UPS for critical equipment.
+
+Management server / controller — small VM or appliance for RADIUS and logging (e.g., Linux VM with FreeRADIUS and a syslog server). Ensure at least 4 vCPU, 8 GB RAM, 100 GB disk for logging retention.
